@@ -8,5 +8,8 @@ export default function getFullResponseFromAPI(success) {
     } else {
       reject(new Error(''));
     }
-  }).then(console.log('Got a response from the API'));
+  }).then((response) => {
+    console.log('Got a response from the API');
+    return response;
+  });
 }
